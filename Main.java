@@ -17,23 +17,19 @@ public class Main {
     //Ask the user for the number they want divided
     System.out.println("Please enter your first number (This is the number you want divided):");
     //initialize the users first number
-    int userNumberOne = input.nextInt();
+    int userNumber1 = input.nextInt();
 
     //Ask the user for the number they want to divide by
     System.out.println("Please enter your second number (This is the number you want to divide by):");
     //initialize the users second number
-    int userNumberTwo = input.nextInt();
-    
-    //calculates the divided number and remainder
-    final int FINALNUMBER = userNumberOne / userNumberTwo;
-    final int FINALREMAINDER = userNumberOne % userNumberTwo;
+    int userNumber2 = input.nextInt();
 
     //initializes both the equations for the final number and remainder
-    int numberFinal = FINALNUMBER;
-    int remainderFinal =FINALREMAINDER;
+    int numberFinal = userNumber1 / userNumber2;
+    int remainderFinal =  userNumber1 % userNumber2;
 
     //displays the final number divided and with the remainder
-    System.out.println(userNumberOne + "/" + userNumberTwo +" is " + numberFinal + " With a remainder of " + remainderFinal);
+    System.out.println(userNumber1 + "/" + userNumber2 +" is " + numberFinal + " With a remainder of " + remainderFinal);
 
 
   }
